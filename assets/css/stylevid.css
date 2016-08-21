@@ -1,0 +1,35 @@
+body {
+	background-image: url('../images/background.jpg'); 
+	background-size: cover;
+	background-color: #000; 
+	color: #fff;
+}
+h1 {
+	font-family: 'Bungee Shade', cursive;
+	font-size: 100px;
+}
+
+img {
+	float: left;
+	height: 484px;
+	width: 700px;
+	padding-left: 40px;
+}
+
+iframe {
+	position: absolute;
+	top: 150px;
+	left: 106px;
+}
+
+#lyrics {
+	width: 500px;
+	max-height: 484px;
+	overflow-y: scroll;
+	float: left;
+	padding-left: 40px;
+	font-family: 'console';
+	font-size: 20px;
+	background-color: #000;
+
+}
