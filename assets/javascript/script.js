@@ -1,31 +1,21 @@
+
+
+//store artist name in local storage
 $("button").click(function () {
-    var singer = $(this).text();
-    console.log(singer);
+  if(typeof(Storage) !== 'undefined')
     localStorage.singer = $(this).text();
 
-
-$(".dropdown-menu li").click( function() {
-    var song = $(this).text();
-    console.log(song);
+  //stores song in local storage
+  $(".dropdown-menu li").click( function() {
+  if(typeof(Storage) !== 'undefined')
     localStorage.song = $(this).text();
 
-/*
- $.ajax({
-  type: "GET",
-  dataType: "xml",
-  url: "https://crossorigin.me/http://api.chartlyrics.com/apiv1.asmx/SearchLyricDirect?artist="+ singer + "&song=" + song +"",
-  }).done(function(xml) {
-    console.log(xml);
-    txt = xml.getElementsByTagName("Lyric")[0].childNodes[0].nodeValue;
-      console.log(txt);
-    txt = txt.replace(/(?:\r\n|\r|\n)/g, '<br />');
+  });
 
-   
-
-      $("#lyrics").append(txt);
-
-  });*/
-
-}); 
+  //saves youtube id data in local storages before link becomes active
+  $('a').on('click', function(){
+    if(typeof(Storage) !== 'undefined')
+      localStorage.videoID = $(this).data('id');
+  }); 
 
 });
