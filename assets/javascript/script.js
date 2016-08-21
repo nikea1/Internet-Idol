@@ -1,12 +1,15 @@
 $("button").click(function () {
     var singer = $(this).text();
     console.log(singer);
+    localStorage.singer = $(this).text();
 
 
 $(".dropdown-menu li").click( function() {
     var song = $(this).text();
     console.log(song);
+    localStorage.song = $(this).text();
 
+/*
  $.ajax({
   type: "GET",
   dataType: "xml",
@@ -16,9 +19,12 @@ $(".dropdown-menu li").click( function() {
     txt = xml.getElementsByTagName("Lyric")[0].childNodes[0].nodeValue;
       console.log(txt);
     txt = txt.replace(/(?:\r\n|\r|\n)/g, '<br />');
+
+   
+
       $("#lyrics").append(txt);
 
-  });
+  });*/
 
 }); 
 
