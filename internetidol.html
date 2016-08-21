@@ -7,7 +7,7 @@
 	<title>Eighties Idol</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
-	<!--<link rel="stylesheet" href="style.css">-->
+	<link rel="stylesheet" href="assets/css/stylevid.css">
 </head>
 
 <body style="background-image: url('assets/images/background.jpg'); background-color: #000; color: #fff">
@@ -40,8 +40,8 @@
 
       function onYouTubeIframeAPIReady() {
       	player = new YT.Player('player', {
-      		height: '360',
-      		width: '640',
+      		height: '400',
+      		width: '420',
           	videoId: localStorage.videoID, //<---determines video
           	events: {
           		'onReady': onPlayerReady,
