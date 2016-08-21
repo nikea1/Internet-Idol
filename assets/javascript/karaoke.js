@@ -21,6 +21,10 @@
       		height: '360',
       		width: '640',
           	videoId: localStorage.videoID, //<---determines video
+            playerVars:{
+              'showInfo': 0,
+              'controls': 0,
+            },
           	events: {
           		'onReady': onPlayerReady,
           		'onStateChange': onPlayerStateChange
@@ -30,7 +34,7 @@
 
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
-      	event.target.pauseVideo();
+      	event.target.playVideo();
       }
 
       // 5. The API calls this function when the player's state changes. Ex: playing, buffering, stopped, ending, etc...
@@ -51,7 +55,7 @@
       
       //lyrics API
       
-      
+
       var singer = localStorage.singer;
       var song = localStorage.song;
       console.log(singer);
