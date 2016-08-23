@@ -12,90 +12,15 @@
 
 <body style="background-image: url('assets/images/background.jpg'); background-color: #000; color: #fff">
 	<h1 class="text-center">80's Idol</h1>
-
+ <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
 	<div id="player"></div>
 
 <img src="assets/images/tvstencil.png">
 <div id="lyrics"></div>
 
 
-<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous">
-</script>
-
-<!--<script src="script.js"></script>-->
-<script>
-	var txt;
-	var tag = document.createElement('script');
-
-	tag.src = "https://www.youtube.com/iframe_api";
-	var firstScriptTag = document.getElementsByTagName('script')[0];
-	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-	if(typeof(Storage) !== 'undefined' && localStorage.videoID){
-		/**/
-		console.log(localStorage.videoID);
-
-		 // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-
-      function onYouTubeIframeAPIReady() {
-      	player = new YT.Player('player', {
-      		height: '400',
-      		width: '420',
-          	videoId: localStorage.videoID, //<---determines video
-          	events: {
-          		'onReady': onPlayerReady,
-          		'onStateChange': onPlayerStateChange
-          	}
-          });
-      }//end of youtube api function
-
-      function onPlayerReady(event) {
-      	event.target.pauseVideo();
-      }
-
-      var done = false;
-      function onPlayerStateChange(event) {
-      	if (event.data == YT.PlayerState.PLAYING && !done) {
-      		setTimeout(stopVideo, 6000);
-      		done = true;
-      	}
-      }
-      
-      function stopVideo() {
-      	player.stopVideo();
-      }
-      
-      
-      var singer = localStorage.singer;
-      var song = localStorage.song;
-      console.log(singer);
-      console.log(song);
-      
-
-    $.ajax({
-	  type: "GET",
-	  dataType: "xml",
-	  url: "https://crossorigin.me/http://api.chartlyrics.com/apiv1.asmx/SearchLyricDirect?artist="+ singer + "&song=" + song +"",
-	  }).done(function(xml) {
-	    console.log(xml);
-	    txt = xml.getElementsByTagName("Lyric")[0].childNodes[0].nodeValue;
-	      console.log(txt);
-	    txt = txt.replace(/(?:\r\n|\r|\n)/g, '<br />');
-		$("#lyrics").append(txt);
-   		});
-
-      
-      /**/
-      
-     
-
-  }
-else{
-	console.log("This browser does not support local storage")
-}
-
-</script>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="assets/javascript/karaoke.js"></script>
 </body>
 </html>
 
