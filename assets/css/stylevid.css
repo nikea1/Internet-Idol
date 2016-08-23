@@ -28,7 +28,7 @@ iframe {
 	overflow-y: scroll;
 	float: left;
 	padding-left: 40px;
-	font-family: 'console';
+	font-family: 'Inconsolata', monospace;
 	font-size: 20px;
 	background-color: #000;
 
