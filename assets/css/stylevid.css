@@ -1,5 +1,5 @@
 body {
-	background-image: url('../images/background.jpg'); 
+	background-image: url('../images/vidbackground.jpg'); 
 	background-size: cover;
 	background-color: #000; 
 	color: #fff;
@@ -22,6 +22,22 @@ iframe {
 	top: 190px;
 	left: 58px;
 	z-index: -1;
+}
+
+#play {
+	height: 55px;
+	width: 90px;
+	position: absolute;
+	top: 220px;
+	left: 560px;
+}
+
+#pause {
+	height: 55px;
+	width: 90px;
+	position: absolute;
+	top: 305px;
+	left: 560px;
 }
 
 #lyrics {

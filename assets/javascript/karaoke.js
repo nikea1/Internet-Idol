@@ -47,12 +47,23 @@
       	}
       }
       
-      /*
-      //stop function
-      function stopVideo() {
-      	player.stopVideo();
-      }*/
-      
+     //pause function
+      function pauseVideo() {
+        player.pauseVideo();
+      };
+    //play function
+        function playVideo() {
+        player.playVideo();
+      } 
+
+      $("#play").click(function(){
+        playVideo();
+      });
+
+      $("#pause").click(function(){
+        pauseVideo();
+      });
+
       //lyrics API
       
 
@@ -68,9 +79,7 @@
        url: "https://crossorigin.me/http://api.chartlyrics.com/apiv1.asmx/SearchLyricDirect?artist="+ singer + "&song=" + song +"",
      }).done(function(xml) {
       var txt;
-      console.log(xml);
       txt = xml.getElementsByTagName("Lyric")[0].childNodes[0].nodeValue;
-      console.log(txt);
       txt = txt.replace(/(?:\r\n|\r|\n)/g, '<br />');
       $("#lyrics").append(txt);
     });

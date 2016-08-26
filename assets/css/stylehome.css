@@ -1,9 +1,18 @@
+html {
+	height: 100%;
+}
 body {
+	background-image: url('../images/homebackground.jpg');
+    background-repeat:no-repeat;
+    background-size: 70% auto;
+    background-position: center bottom;
+    background-attachment: fixed;
 	background-color: #000; 
 	color: #fff;
+	font-family: 'Exo', sans-serif;
 }
 
 .btn {
-	background-color: #fe9400;
-	margin: 5px;
+	background-color: #fbb32d;
+	margin: 10px;
 }

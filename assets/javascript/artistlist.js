@@ -19,20 +19,20 @@ var songList = [];
 
 <<<<<<< HEAD
       songList[0] = new artist("Micheal Jackson", [['Bad','dsUXAEzaC3Q'], ['Thriller', 'hG6oy46qKE4'], ['Dirty Diana','yUi_S6YWjZw'], ['PYT','5B0itw6rmmI']]);
-      songList[1] = new artist("TKA", [['Maria','vxSkIklMnTQ'], ['Louder Than Love', 'ksCMTwM1E-k'], ['Come get my Love','YCPgM6WScaw'], ['Scars','RQGqYGjFnh4']]);
-      songList[2] = new artist("Queen", [['Bohemian Rhapsody','fJ9rUzIMcZQ'], ['We are the Champions', '04854XqcfCY'], ['We Will Rock You ','-tJYN-eG1zk'], ['Another One Bites the Dust','rY0WxgSXdEE']]);
+      songList[1] = new artist("TKA", [['Maria','vxSkIklMnTQ'], ['Louder Than Love', 'ksCMTwM1E-k'], ['Come Get My Love','YCPgM6WScaw'], ['Scars','RQGqYGjFnh4']]);
+      songList[2] = new artist("Queen", [['Bohemian Rhapsody','fJ9rUzIMcZQ'], ['We Are the Champions', '04854XqcfCY'], ['We Will Rock You ','-tJYN-eG1zk'], ['Another One Bites the Dust','rY0WxgSXdEE']]);
       songList[3] = new artist("Prince", [['Purple Rain','F8BMm6Jn6oU'], ['When Doves Cry', 'RQAKjkXDHQM'], ['Kiss','KpCi8TC9QtI'], ['Adore','9gGPVBtQ7JU']]);
-      songList[4] = new artist("Cyndi Lauper", [['Girls Just Wanna Have Fun','PIb6AZdTr-A'], ['Time after Time', 'VdQY7BusJNU'], ['Change of Heart','svHeFdSvPL0'], ['She Bop','KFq4E9XTueY']]);
+      songList[4] = new artist("Cyndi Lauper", [['Girls Just Wanna Have Fun','PIb6AZdTr-A'], ['Time After Time', 'VdQY7BusJNU'], ['Change of Heart','svHeFdSvPL0'], ['She Bop','KFq4E9XTueY']]);
 
 =======
-//add artist and music here. 
-//Ex: songList.push(new artist(artistName, [['songName1, youtubeID1'], [songName2, youtubeID2],...,[songNameN, youtubeIDN]]));
+add artist and music here. 
+Ex: songList.push(new artist(artistName, [['songName1, youtubeID1'], [songName2, youtubeID2],...,[songNameN, youtubeIDN]]));
       songList.push(new artist("Micheal Jackson", [['Bad','dsUXAEzaC3Q'], ['Thriller', 'hG6oy46qKE4'], ['Dirty Diane','yUi_S6YWjZw'], ['PVT','5B0itw6rmmI']]));
       songList.push(new artist("TKA", [['Maria','vxSkIklMnTQ'], ['Louder Than Love', 'ksCMTwM1E-k'], ['Come get my Love','YCPgM6WScaw'], ['Scars','RQGqYGjFnh4']]));
       songList.push(new artist("Queen", [['Bohemian Rhapsody','fJ9rUzIMcZQ'], ['We are the champions', '04854XqcfCY'], ['We Will Rock You ','-tJYN-eG1zk'], ['Another One Bites the Dust','rY0WxgSXdEE']]));
       songList.push(new artist("Prince", [['Purple Rain','F8BMm6Jn6oU'], ['When Doves Cry', 'RQAKjkXDHQM'], ['Kiss','KpCi8TC9QtI'], ['Adore','9gGPVBtQ7JU']]));
       songList.push(new artist("Cyndi Lauper", [['Girls Just Wanna Have Fun','PIb6AZdTr-A'], ['Time after Time', 'VdQY7BusJNU'], ['Change of Heart','svHeFdSvPL0'], ['She Bop','KFq4E9XTueY']]));
->>>>>>> 3e0ca90d3e27fd0171ebd8b75cd02180cddc5f13
+      >>>>>>> 3e0ca90d3e27fd0171ebd8b75cd02180cddc5f13
 
 
 //this function will generate the artist buttons from the list
