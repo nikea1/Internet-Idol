@@ -22,7 +22,7 @@
       		width: '480',
           	videoId: localStorage.videoID, //<---determines video
             playerVars:{
-              'showInfo': 0,
+              'showinfo': 0,
               'controls': 0,
             },
           	events: {
@@ -38,13 +38,13 @@
       }
 
       // 5. The API calls this function when the player's state changes. Ex: playing, buffering, stopped, ending, etc...
-      var done = false;
+      //var done = false;
       function onPlayerStateChange(event) {
       	
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-      		setTimeout(stopVideo, 6000);
-      		done = true;
-      	}
+        //if (event.data == YT.PlayerState.PLAYING && !done) {
+      		//setTimeout(stopVideo, 6000);
+      		//done = true;
+      	//}
       }
       
      //pause function

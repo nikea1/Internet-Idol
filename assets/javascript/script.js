@@ -2,7 +2,6 @@
 
 //store artist name in local storage
 $("button").click(function () {
-  console.log("in button click")
   if(typeof(Storage) !== 'undefined')
     localStorage.singer = $(this).text();
 
